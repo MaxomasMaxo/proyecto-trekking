@@ -1,0 +1,31 @@
+.navbar{
+    background-color: #576B59;
+    display: flex;
+    align-self: end;
+    padding:10px 0px;
+    justify-content: end;
+    gap: 5px;
+    button{
+        color:white;
+        font-weight: 500;
+        font-size: 20px;
+        margin-right: 10px;
+    }    
+}
+
+#logo{
+    width: 70px; height: 70px;
+}
+
+#fotoperfil{
+    border-radius: 50%;
+    width: 65px; height: 65px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+#username{
+    color: white;
+}

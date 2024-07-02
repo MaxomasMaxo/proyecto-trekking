@@ -1,0 +1,9 @@
+<div class="carousel">
+  <div class="carousel-inner" #carouselInner>
+    <div class="carousel-item" *ngFor="let item of items">
+      <img [src]="item.image" alt="Item {{ item.title }}">
+    </div>
+  </div>
+  <button class="carousel-prev" (click)="prev()">‹</button>
+  <button class="carousel-next" (click)="next()">›</button>
+</div>
