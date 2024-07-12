@@ -1,0 +1,24 @@
+.navbar {
+    margin: 0 auto;
+}
+
+a{
+    color: white;
+}
+.dropdown-item:hover {
+    background-color: #f5be2e;
+    color: white;
+}
+
+.dropdown-menu{
+    background-color: #f25c08;opacity: 0.6;
+}
+
+.dropdown-divider{
+    background-color: white;
+}
+
+#fotoperfil{
+    border-radius: 50%;
+    width: 65px; height: 65px;
+}

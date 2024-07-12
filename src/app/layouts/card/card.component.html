@@ -1,0 +1,26 @@
+<div *ngFor="let ruta of rutas">
+  <div class="card">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="ruta.imagen" class="img-fluid" [alt]="ruta.nombre">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ ruta.nombre }}</h5>
+          <p class="card-text">Dificultad: {{ ruta.dificultad }}</p>
+          <img id="barra-difmedia" src="barra-difmedia.png" alt="">
+          <br><br><br>
+          <div style="border-top: solid white;"></div>
+          <div style="display: flex;">
+            <div style="flex: 1;">Puntos necesarios: 10</div>
+            <div style="flex: 1;">Ubicacion: {{ ruta.ubicacion }}</div>
+            <div style="flex: 1;">
+              <a href="/detalleRuta" class="btn" style="background-color: #f5be2e; color: white; margin-top: 5px; border-radius: 10px;">Detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+</div>

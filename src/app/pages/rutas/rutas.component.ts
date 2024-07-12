@@ -1,12 +1,12 @@
-import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { CardComponent } from "../../layouts/card/card.component";
 
 @Component({
-  selector: 'app-rutas',
-  standalone: true,
-  imports: [NgFor],
-  templateUrl: './rutas.component.html',
-  styleUrl: './rutas.component.scss'
+    selector: 'app-rutas',
+    standalone: true,
+    templateUrl: './rutas.component.html',
+    styleUrl: './rutas.component.scss',
+    imports: [CardComponent]
 })
 export class RutasComponent {
 

@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nombre": "Max",
+      "apellido": "Muni",
+      "email": "maxmuni@trekking.com",
+      "celular": "123456789",
+      "ciudad": "Quilpué",
+      "nickname": "maxo",
+      "password": "adminadmin",
+      "rutasFav": ["ruta1", "ruta2"]
+    },
+    {
+      "id": 2,
+      "nombre": "Fran",
+      "apellido": "Prado",
+      "email": "franp@trekking.com",
+      "celular": "987654321",
+      "ciudad": "Viña",
+      "nickname": "fran",
+      "password": "password",
+      "rutasFav": ["ruta3"]
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos",
+      "apellido": "López",
+      "email": "carlos@example.com",
+      "celular": "456789123",
+      "ciudad": "Valparaiso",
+      "nickname": "carlitos",
+      "password": "secure123",
+      "rutasFav": []
+    }
+  ],
+  "rutas": [
+      {
+      "id": 1,
+      "nombre": "Campana",
+      "descripcion": "Descripcion de la ruta 1",
+      "imagen": "campana.jpeg",
+      "ubicacion": "Olmué, Valparaíso",
+      "dificultad": 4,
+      "calificacion": 5
+    },
+    {
+      "id": 2,
+      "nombre": "Salto del agua - Placilla",
+      "descripcion": "Descripcion de la ruta 2",
+      "imagen": "placilla.jpeg",
+      "ubicacion": "Placilla, Valparaíso",
+      "dificultad": 2,
+      "calificacion": 3
+    },
+    {
+      "id": 3,
+      "nombre": "Cerro Mauco",
+      "descripcion": "Descripcion de la ruta 3",
+      "imagen": "mauco.jpeg",
+      "ubicacion": "Quintero, Valparaíso",
+      "dificultad": 3,
+      "calificacion": 4
+    }
+  ],
+  "grupos": [
+    {
+      "id": 1,
+      "nombre": "Dinosaurios",
+      "rutaGrupo": {
+        "id": 1,
+      "nombre": "Campana",
+      "descripcion": "Descripcion de la ruta 1",
+      "imagen": "campana.jpeg",
+      "ubicacion": "Olmué, Valparaíso",
+      "dificultad": 4,
+      "calificacion": 5
+      },
+      "fecha": "2024-07-10T00:00:00.000Z",
+      "horaio": "10:00",
+      "creador": "Max Muni",
+      "integrantes": [
+        {
+          "id": 1,
+      "nombre": "Max",
+      "apellido": "Muni",
+      "email": "maxmuni@trekking.com",
+      "celular": "123456789",
+      "ciudad": "Quilpué",
+      "nickname": "maxo",
+      "password": "adminadmin",
+      "rutasFav": ["ruta1", "ruta2"]
+        }]},
+      {
+          "id": 2,
+          "nombre": "The Groats",
+          "rutaGrupo": {
+            "id": 2,
+            "nombre": "Salto del agua - Placilla",
+            "descripcion": "Descripcion de la ruta 2",
+            "imagen": "placilla.jpeg",
+            "ubicacion": "Placilla, Valparaíso",
+            "dificultad": 2,
+            "calificacion": 3
+          },
+          "fecha": "2024-07-10T00:00:00.000Z",
+          "horaio": "10:00",
+          "creador": "Fran Prado",
+          "integrantes": [
+            {
+              "id": 2,
+              "nombre": "Fran",
+              "apellido": "Prado",
+              "email": "franp@trekking.com",
+              "celular": "987654321",
+              "ciudad": "Viña",
+              "nickname": "fran",
+              "password": "password",
+              "rutasFav": ["ruta3"]
+            }
+          ]
+    }
+  ]
+}

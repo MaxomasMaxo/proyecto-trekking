@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg" style="background-color: #576B59;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img ngSrc="logo.png" alt="logo" width="90" height="90">
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item" >
+                <a class="nav-link" [routerLink]="['/']">Inicio</a>
+            </li>
+            <div class="d-flex" style="height: 30px; color: white;">
+                <div class="vr"></div>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/rutas']">Rutas</a>
+            </li>
+            <div class="d-flex" style="height: 30px; color: white;">
+                <div class="vr"></div>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/grupos']">Grupos</a>
+            </li>
+            <div class="d-flex" style="height: 30px; color: white;">
+                <div class="vr"></div>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/recomendaciones']">Recomendaciones</a>
+            </li>
+            <li class="nav-item dropdown" *ngIf="isLoggedIn()">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img id="fotoperfil" src="Lince boreal.jpg" alt="logo" class="navbar-logo">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><p style="text-align: center; color:white;">{{user?user.nombre:''}}</p></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" class="nav-link" [routerLink]="['/perfil']">Ver perfil</a></li>
+                    <li><a class="dropdown-item" class="nav-link" [routerLink]="['/editar perfil']">Editar perfil</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a (click)="logout()" class="dropdown-item" class="nav-link" [routerLink]="['/']">Cerrar sesión</a></li>
+                </ul>
+            </li>
+            <ng-template [ngIf]="!isLoggedIn()">
+                <li class="nav-item">
+                  <a class="nav-link" [routerLink]="['/iniciarSesion']">Iniciar sesión</a>
+                </li>
+              </ng-template>
+        </ul>
+    </div>
+</nav>
+
+

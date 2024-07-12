@@ -1,1 +1,19 @@
-<p>perfil works!</p>
+<div style="display: flex;" *ngIf="user">
+    <div style="flex: 1; border-right: 1px solid #ccc; padding: 20px;">
+        <img id="fotoperfil" src="Lince boreal.jpg"alt="logo" class="navbar-logo"><br><br>
+        <h6>Usuario:&nbsp; &nbsp;<span style="background-color: #f25c08;color: white;">&nbsp; {{user.nombre}} {{user.apellido}} / {{user.nickname}} &nbsp;</span></h6>
+        <h6>Puntos recolectados:&nbsp; &nbsp;<span style="background-color: #f25c08;color: white;">&nbsp;&nbsp; 10puntos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h6>
+        <h6>Grupo perteneciente:&nbsp; &nbsp;<span style="background-color: #f25c08;color: white;">&nbsp; &nbsp;The Horse &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h6>
+    </div>
+    <div style="flex: 1; padding: 20px;">
+        <h1>Historial</h1><br><br>
+        <div class="card mb-3" style="background-color: #F6F6F6; border-color: #102B26;">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #f25c08;">Ruta sendero Curauma-Laguna verde</h5>
+              <p class="card-text">18 de mayo - a las 12:00pm</p>
+              <p class="card-text">Incursion con grupo The Horse</p>
+              <p class="card-text" style="color: #f5be2e; text-align: right;">Puntos ganados: 10</p>
+            </div>
+          </div>
+    </div>
+</div>

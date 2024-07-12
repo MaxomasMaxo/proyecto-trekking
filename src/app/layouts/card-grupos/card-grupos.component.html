@@ -1,0 +1,17 @@
+<div *ngFor="let grupo of grupos" class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="curauma.png" class="card-img-top" alt="punto de encuentro">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h3 class="card-title" style="background-color: #F25C08; color: white;">Grupo {{ grupo.nombre }}</h3>
+        <h5 class="card-title" style="color:#F25C08">Incursión Sendero {{ grupo.rutaGrupo.nombre }}</h5>
+        <p class="card-text">
+          >{{ grupo.fecha }}<br>
+          >Contacto grupo: {{ grupo.integrantes[0].celular }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

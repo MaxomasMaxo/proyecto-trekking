@@ -1,1 +1,54 @@
-<p>form-field works!</p>
+<div class="mb-6">
+    <img src="Lince boreal.jpg" alt="fotoperfil"><br><br><br>
+    <div class="formas">
+        <mat-form-field appearance="outline" style="width: 300px;">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Ingrese nombre">
+        </mat-form-field>&nbsp;&nbsp;
+    
+        <mat-form-field appearance="outline" style="width: 300px;">
+            <mat-label>Apellido</mat-label>
+            <input matInput placeholder="Ingrese apellido">
+        </mat-form-field><br><br>
+    
+        <mat-form-field appearance="outline" style="width: 610px;">
+            <mat-label>Ingresar correo</mat-label>
+            <input
+              matInput
+              [formControl]="email"
+              (blur)="updateErrorMessage()"
+              required
+            />
+            @if (email.invalid) {
+              <mat-error>{{errorMessage()}}</mat-error>
+            }
+        </mat-form-field><br><br>
+    
+        <mat-form-field appearance="outline" style="width: 300px;">
+            <mat-label>Numero celular</mat-label>
+            <input matInput placeholder="Ingrese un numero">
+            <mat-icon matSuffix>phone</mat-icon>
+        </mat-form-field>&nbsp;&nbsp;
+        
+        <mat-form-field appearance="outline" style="width: 300px;">
+            <mat-label>Nombre de usuario</mat-label>
+            <input matInput placeholder="Ingrese un nombre de usuario">
+        </mat-form-field><br><br>
+    
+        <mat-form-field appearance="outline" style="width: 610px;">
+            <mat-label>Contraseña</mat-label>
+            <input matInput [type]="hide() ? 'password' : 'text'" />
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="clickEvent($event)"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide()"
+            >
+              <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field><br><br>
+        <a href="/detalleRuta" class="btn" style="background-color:white; color: #f5be2e; margin-left: 270px; border-radius: 10px;">Cancelar</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/detalleRuta" class="btn" style="background-color: #f5be2e; color: white; margin-left: 10px; border-radius: 10px;">Guardar</a> 
+    </div>
+</div>
